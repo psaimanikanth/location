@@ -273,8 +273,40 @@ var Designs = {
                 if (0 == c[d].indexOf("designColor")) var e = "#" + c[d].split("designColor").pop();
             $("#dynamicStyles").detach(), $(".bookCover").css("background-image", 'url("/images/designs/coverimages/cover' + $("#navIconPreview").attr("data-wedsitedomain") + ".jpg?" + (new Date).getTime() + '")');
             var f = '<style id="dynamicStyles">';
-            f += " a, a:visited, a:hover, a:active {color: " + e + ";}", f += ' .background {background-image: url("../' + b + '.jpg");}', f += ' .bookCoverSample {background-image: url("../' + a + '.jpg");}', f += " #bottomTools #countdown {border: 1px solid " + e + ";}", f += " #bottomTools #musicPlayer {border: 1px solid " + e + ";}", f += " button {background: " + e + "; background: linear-gradient(150deg, #ffffff, " + e + ", " + e + "); border: 1px outset " + e + ";}", f += " button:hover {background: " + e + "; background: linear-gradient(150deg, #ffffff, " + e + ");}", f += " .closeWindowIcon:hover {color: " + e + ";}", f += " .iconButton:hover {color: " + e + ";}", f += " input[type=password] {border: 1px solid " + e + ";}", f += " input[type=password]:focus {outline-color: " + e + ";}", f += " input[type=text] {border: 1px solid " + e + ";}", f += " input[type=text]:focus {outline-color: " + e + ";}", f += ' .insideCover {background-image: url("../images/designs/insidecover/' + a + '.jpg");}', f += ' .leftPage {background-image: url("../images/designs/leftpage/' + a + '.png");}', f += " .pageSection:not(:last-child) {border-bottom: 1px solid " + e + ";}", f += ' .rightPageNoTitle {background-image: url("../images/designs/rightpage/' + a + '.png");}', f += ' .rightPageWithTitle {background-image: url("../images/designs/rightpagewithtitle/' + a + '.png");}', f += " select {border: 1px solid " + e + ";}", f += " select:focus {outline-color: " + e + ";}", f += " textarea {border: 1px solid " + e + ";}", f += " textarea:focus {outline-color: " + e + ";}", f += " .ui-datepicker th {color: " + e + ";}", f += " .ui-tooltip {background-color: " + e + ";}", f += " .weddingColorBackground {background-color: " + e + " !important}", f += " .weddingColorBackgroundHover:hover {background-color: " + e + " !important}", f += " .weddingColorBorder {border-color: " + e + " !important}", f += " .weddingColorBorder {border-style: solid !important}", f += " .weddingColorContent {color: " + e + " !important}", f += " .weddingColorContentHover:hover {color: " + e + " !important}", f += ' @media (orientation: portrait) {.leftPage {background-image: url("../images/designs/toppage/' + a + '.png")}.rightPageNoTitle {background-image: url("../images/designs/bottompage/' + a + '.png")}.rightPageWithTitle {background-image: url("../images/designs/bottompagewithtitle/' + a + '.png")}};', f += " </style>", $("head").append(f)
-        }
+     f +=" a, a:visited, a:hover, a:active {color: " + e + ";}",
+     f +=' .background {background-image: url("../' + b + '.jpg");}',
+     f +=' .bookCoverSample {background-image: url("../' + a + '.jpg");}',
+     f +=" #bottomTools #countdown {border: 1px solid " + e + ";}",
+     f +=" #bottomTools #musicPlayer {border: 1px solid " + e + ";}",
+     f +=" button {background: " + e + "; background: linear-gradient(150deg, #ffffff, " + e + ", " + e + "); border: 1px outset " + e + ";}",
+     f +=" button:hover {background: " + e + "; background: linear-gradient(150deg, #ffffff, " + e + ");}",
+     f +=" .closeWindowIcon:hover {color: " + e + ";}",
+     f +=" .iconButton:hover {color: " + e + ";}",
+     f +=" input[type=password] {border: 1px solid " + e + ";}",
+     f +=" input[type=password]:focus {outline-color: " + e + ";}",
+     f +=" input[type=text] {border: 1px solid " + e + ";}",
+     f +=" input[type=text]:focus {outline-color: " + e + ";}",
+     f +=' .insideCover {background-image: url("../' + a + '.jpg");}',
+     f +=' .leftPage {background-image: url("../' + a + '.png");}',
+     f +=" .pageSection:not(:last-child) {border-bottom: 1px solid " + e + ";}",
+     f +=' .rightPageNoTitle {background-image: url("../' + a + '.png");}',
+     f +=' .rightPageWithTitle {background-image: url("../' + a + '.png");}',
+     f +=" select {border: 1px solid " + e + ";}",
+     f +=" select:focus {outline-color: " + e + ";}",
+     f +=" textarea {border: 1px solid " + e + ";}",
+     f +=" textarea:focus {outline-color: " + e + ";}",
+     f +=" .ui-datepicker th {color: " + e + ";}",
+     f +=" .ui-tooltip {background-color: " + e + ";}",
+     f +=" .weddingColorBackground {background-color: " + e + " !important}",
+     f +=" .weddingColorBackgroundHover:hover {background-color: " + e + " !important}",
+     f +=" .weddingColorBorder {border-color: " + e + " !important}",
+     f +=" .weddingColorBorder {border-style: solid !important}",
+     f +=" .weddingColorContent {color: " + e + " !important}",
+     f +=" .weddingColorContentHover:hover {color: " + e + " !important}",
+     f +=' @media (orientation: portrait) {.leftPage {background-image: url("../' + a + '.png")}.rightPageNoTitle {background-image: url("../images/designs/bottompage/' + a + '.png")}.rightPageWithTitle {background-image: url("../images/designs/bottompagewithtitle/' + a + '.png")}};',
+     f +=" </style>",
+     $("head").append(f)       
+	   }
     },
     Login = {
         goToForgotYourPassword: function() {
